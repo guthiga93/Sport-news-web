@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<html>
+<body>
+
+<div id="header">
+  <div id="FootBall">
+<div class="slideshow-container" data-cycle="2700" >
+ <div class="mySlides">
+    <img src="img1.jpeg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img2.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img3.jpeg" style="width:100%;">
+</div>
+
+  <div class="mySlides">
+    <img src="img4.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img5.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img6.jpg" style="width:100%;">
+</div>
+</div>
+</div>
+
+<div id="BasketBall">
+<div class="slideshow-container" data-cycle="2600" >
+  
+ 
+<div class="mySlides">
+    <img src="img7.jpeg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img8.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img9.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img10.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+<img src="img11.jpg" style="width:100%;">
+</div>
+</div>
+</div>
+
+<div id="Golf">
+<div class="slideshow-container" data-cycle="2500" >
+ 
+<div class="mySlides">
+<img src="img12.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img13.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+<img src="img14.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+<img src="img15.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+  <img src="img16.jpg" style="width:100%;">
+</div>
+<div class="mySlides">
+<img src="golf1.jpg" style="width:100%;">
+</div>
+
+</div>
+</div>
+</div>
+
+<script>
+  
+  var slideshowContainers = document.getElementsByClassName("slideshow-container");
+  
+  for(let s = 0; s < slideshowContainers.length; s++) {
+          
+      var cycle = slideshowContainers[s].dataset.cycle;
+    
+      var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+      var slideIndex = 0;
+     
+      showSlides(slides, slideIndex, cycle);
+  };
+  
+
+  function showSlides(slides, slideIndex, cycle) {
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      };
+      slideIndex++;
+      if (slideIndex > slides.length) {
+          slideIndex = 1
+      };
+      slides[slideIndex - 1].style.display = "block";
+      
+      setTimeout(function() {
+          showSlides(slides, slideIndex, cycle)
+      }, cycle);
+  };
+  </script>
+  
+ 
+    <h1 id="basketball">Basketball</h1>
+   
+  
+  <div id="row" style="width:100%;height:150px;" >
+    <div id="column">
+      <p>This is a game played between two teams of five players each on a rectangular court, usually indoors. Each team tries to score by tossing the ball through the opponent’s goal, an elevated horizontal hoop and net called a basket.The National Basketball Association is a men's professional basketball league in North America, composed of 30 teams. It is one of the four major professional sports leagues in the United States and Canada, and is widely considered to be the premier men's professional basketball league in the world.</p>
+    </div>
+    <div id="column">
+     <p>Some of the benefits of playing basketball are?</p>
+    <ul>
+      <li>Physical Fitness</li>
+      <li>Weight Control</li>
+      <li>Stress Relief</li>
+      <li>Social Benefits</li>
+      <li>Boosts The Immune System</li>
+      <li>Boosts Mental Development</li>
+    </ul>
+    </div>
+    <div id="column">
+      <p>Some of the popular teams:</p>
+      <ul>
+        <li>Miami Heat.</li>
+        <li>Los Angeles Lakers.</li>
+        <li>Spurs.</li>
+        <li>Golden State Warriors.</li>
+        <li>Huston Rockets.</li>
+        <li>Utah Jazz.</li>
+      </ul>
+    </div> 
+    </div>
+
+    <h2 id="popu">Some of the popular players</h2>
+    <div id="pop">
+ 
+ 
+  <div> 
+   <div id="row2"> 
+      <div id="column2">
+       <h3 id="names">Lebron James</h3>
+       <img src="https://www3.pictures.zimbio.com/gi/LeBron+James+pTVzkdTSKGAm.jpg" height="70%" width="100%">
+      <p>LeBron James became an immediate star after skipping college to join the NBA's Cleveland Cavaliers. He led the Miami Heat to NBA titles in 2012 and 2013 and won another championship with Cleveland in 2016, before joining the Los Angeles Lakers in 2018.</p>
+     </div>
+      <div id="column2">
+        <h3 id="names">Kobe Bryant</h3>
+        <img src="https://3qbqmv3k0dsayahrd3pw8jru-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/KobeBryant-746x500.jpg" height="70%" width="100%">
+      <p>Former pro basketball player Kobe Bryant won five NBA titles with the Los Angeles Lakers while establishing himself as one of the game's all-time greats. He died tragically in a helicopter crash on January 26, 2020.</p>
+      </div>
+     <div id="column2">
+       <h3 id="names">James Harden </h3>
+       <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5cfea19734a5c4000847fb8a%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D749%26cropX2%3D4156%26cropY1%3D436%26cropY2%3D3840"height="70%" width="100%">
+     <p>NBA guard James Harden, known as 'The Beard,' has emerged as one of pro basketball's top players since his trade to the Houston Rockets in 2012.</p>
+      </div>
+    </div>
+    </div>
+  </div>  
+  <div>
+  <div id="contact">
+ <div class="container"> 
+  <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+<form action="#">
+  <h2 id="popu">Subscribe to our Newsletter</h2> 
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+ <input type="submit" value="Subscribe">
+ </form>
+ </div>
+</div>
+ </div>
+</div>
+
+ </body>
+</html>
+ 
